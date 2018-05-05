@@ -1,0 +1,11 @@
+<div id="format-actions" (click)="saveClass($event)">
+  <button class="format-action" [ngClass]="{
+    'active': classB == 1
+  }" type="button"><b>B</b></button>
+  <button class="format-action" type="button" [ngClass]="{
+    'active': classI == 1
+  }"><i>I</i></button>
+  <button class="format-action" type="button" [ngClass]="{
+    'active': classU == 1
+  }"><u>U</u></button>
+</div>

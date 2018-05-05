@@ -1,0 +1,10 @@
+<div class="popup" [ngClass]="{
+  'active': popupShow === true
+}">
+  <div>To swap word in text, please double click on selected word, than click on the word from list below:</div>
+  <ul *ngIf="synonymsLength > 0">
+    <li (click)="swapWord($event)" *ngFor="let item of synonyms">{{item}}</li>
+  </ul>
+  <div *ngIf="synonymsLength === 0" style="color: #ffa500">No synonyms for selected word</div>
+</div>
+
